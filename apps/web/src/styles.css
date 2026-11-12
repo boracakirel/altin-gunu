@@ -1,0 +1,51 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #f7eddc;
+  background: #201c1a;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+main {
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #dfb765;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+p {
+  max-width: 40rem;
+  line-height: 1.6;
+}
+
+.status {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #74613f;
+  border-radius: 999px;
+  color: #dfb765;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "altin-gunu",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An interactive Altın Günü livestream game for Twitch and Kick.",
+  "workspaces": ["apps/*"],
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "dev": "concurrently -k -n server,web \"npm run dev --workspace @altin-gunu/server\" \"npm run dev --workspace @altin-gunu/web\"",
+    "build": "npm run build --workspaces",
+    "typecheck": "npm run typecheck --workspaces",
+    "start": "npm run start --workspace @altin-gunu/server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^5.9.3"
+  }
+}
